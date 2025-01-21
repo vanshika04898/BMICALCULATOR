@@ -1,0 +1,178 @@
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+   
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: hsl(222, 100%, 69%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont {
+        width: 400px;
+        height: 400px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-family: 'Rubik', sans-serif;
+        color: #63dbff;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #63f2ff;
+        border-radius: 5px 0px 0px 5px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .contin {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    select {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #63d8ff;
+        border-radius: 0px 5px 5px 0px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        background-color: #63c6ff;
+        color: rgb(30, 30, 30);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    select option {
+        color: rgb(70, 70, 70);
+        font-weight: 600;
+    }
+
+
+
+    .form button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(99, 203, 255);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    input:focus,
+    select:focus {
+        outline: 2px solid #63d5ff;
+    }
+
+    #weightinputpound {
+        display: none;
+    }
+
+
+    #heightinputcm {
+        display: none;
+    }
+
+    #heightinputin {
+        display: none;
+    }
+
+    #heightinputft {
+        display: none;
+    }
+
+    label {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #63cbff;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: left;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .result {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddff63;
+        border-radius: 10px;
+        padding: 20px;
+        display: none;
+    }
+
+    .result h2 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+        font-family: 'Rubik', sans-serif;
+        color: #626262;
+    }
+
+    .status {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-family: 'Rubik', sans-serif;
+        color: rgb(69, 69, 69);
+    }
+
+    .measurements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-family: 'Rubik', sans-serif;
+        color: rgb(69, 69, 69);
+    }
+
+    .measurements p {
+        margin-bottom: 5px;
+        color: rgb(85, 85, 85);
+    }
+
+    .result button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #cbff63;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+</style>
